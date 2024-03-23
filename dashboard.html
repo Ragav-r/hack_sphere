@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title>
+</head>
+<body>
+
+<h1>User Dashboard</h1>
+
+<div id="userDataContainer"></div>
+
+<script>
+// Retrieve user data from localStorage
+var userData = localStorage.getItem("userData");
+
+if (userData) {
+  // Parse user data from JSON format
+  userData = JSON.parse(userData);
+
+  // Display user data on the dashboard
+  var userDataContainer = document.getElementById("userDataContainer");
+  userDataContainer.innerHTML = "<p>Name: " + userData.name + "</p><p>Email: " + userData.email + "</p>";
+} else {
+  // If no user data found, display a message
+  var userDataContainer = document.getElementById("userDataContainer");
+  userDataContainer.innerHTML = "<p>No user data found</p>";
+}
+</script>
+
+</body>
+</html>

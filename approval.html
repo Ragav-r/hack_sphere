@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Approval Form</title>
+</head>
+<body>
+
+<h2>Event Approval Form</h2>
+
+<form id="approvalForm" method="post" action="#">
+  <label for="eventName">Event Name:</label><br>
+  <input type="text" id="eventName" name="eventName" required><br><br>
+
+  <label for="venue">Venue:</label><br>
+  <input type="text" id="venue" name="venue" required><br><br>
+
+  <label for="date">Date:</label><br>
+  <input type="date" id="date" name="date" required><br><br>
+
+  <label for="startTime">Start Time:</label><br>
+  <input type="time" id="startTime" name="startTime" required><br><br>
+
+  <label for="endTime">End Time:</label><br>
+  <input type="time" id="endTime" name="endTime" required><br><br>
+
+  <label for="recipientName">Recipient's Name:</label><br>
+  <input type="text" id="recipientName" name="recipientName" required><br><br>
+
+  <label for="recipientPosition">Recipient's Position/Title:</label><br>
+  <input type="text" id="recipientPosition" name="recipientPosition" required><br><br>
+
+  <label for="recipientDepartment">Recipient's Department/Organization:</label><br>
+  <input type="text" id="recipientDepartment" name="recipientDepartment" required><br><br>
+
+  <label for="expectedAttendance">Expected Attendance:</label><br>
+  <input type="number" id="expectedAttendance" name="expectedAttendance" required><br><br>
+
+  <button type="submit">Generate Approval Letter</button>
+</form>
+
+</body>
+</html>

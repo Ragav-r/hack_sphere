@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enrollment Button with Limit</title>
+</head>
+<body>
+
+<h2>Enrollment Button with Limit</h2>
+
+<!-- Enrollment button -->
+<button id="enrollmentButton" onclick="enroll()">Enroll</button>
+
+<!-- Enrollment count -->
+<p id="enrollmentCount">Enrollments: 0</p>
+
+<script>
+    var maxEnrollments = 5; // Maximum number of enrollments allowed
+    var enrollmentCount = 0; // Initial enrollment count
+
+    // Function to enroll
+    function enroll() {
+        if (enrollmentCount < maxEnrollments) {
+            enrollmentCount++;
+            updateEnrollmentDisplay();
+        } else {
+            alert("Enrollment limit reached!");
+        }
+    }
+
+    // Function to update enrollment display
+    function updateEnrollmentDisplay() {
+        var enrollmentText = document.getElementById("enrollmentCount");
+        enrollmentText.textContent = "Enrollments: " + enrollmentCount;
+    }
+</script>
+
+</body>
+</html>

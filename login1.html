@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<title>Login Form Design</title>
+<link rel="stylesheet" type="text/css" href="C:\Users\ragav\OneDrive\Documents\AI HACKATHON\form1.css">
+<style>
+    body
+    {
+    background-image: url("login.jpeg"); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+
+
+    }
+    .my-button {
+      /* Set width and height for fixed shape */
+      width: 300px; /* Adjust width as needed */
+        height: 50px; /* Adjust height as needed */
+        /* Other styling properties */
+        background-color: #072bf6; /* Green background */
+        border: none; /* No border */
+        color: rgb(230, 227, 227); /* White text color */
+        text-align: center; /* Center align text */
+        text-decoration: none; /* No underline */
+        display: inline-block; /* Make it behave like a block-level element */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Cursor on hover */
+        border-radius: 25px; /* Border radius to create rounded shape */
+  }
+</style>
+    </head>
+    
+
+<body>
+
+
+    <div class="box">
+
+    <img src="user.png " class="user">
+
+        <h1>Login Here</h1>
+
+        <form name="myform"  action="login1.php" method="POST" >
+
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username " required="">
+
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" required="">
+
+
+            <button class="my-button" id="redirectButton" onclick="window.location.href= 'department.html';" style="color: rgb(236, 237, 239);">SUBMIT</button>
+
+            <br><br>
+            <a href="login1regisitration.html">Register for new account ?</a>
+
+        </form>
+        
+    </div>
+
+    
+
+</body>
+</html>

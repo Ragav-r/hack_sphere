@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Navigation Bar with Carousel</title>
+<link rel="stylesheet" href="department.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.container {
+  display: inline-block; /* Display as inline block */
+  width: 30%; /* Adjust width as needed */
+  margin: 10px; /* Add margin to create space between containers */
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #06100c;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.box {
+  height: 400px; /* Adjusted height */
+  background-color: #aba6a664;
+  border: 1px solid #ccc;
+  padding: 20px;
+  float: left;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+  <div id="video-background">
+    <video autoplay muted loop>
+      <source src="C:\xampp\htdocs\AI HACKATHON\auto.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div style="padding-top: 10px; padding-right: 20px; padding-bottom: 15px; padding-left: 100px">
+      <div class="container box"> <!-- Combined classes -->
+        <img src="autoposter1.jpeg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text"><a href="technontech.html">ENROLL</a></div>
+        </div>
+      </div>
+      <div class="container box"> <!-- Combined classes -->
+        <img src="aiposter1.jpeg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text"><a href="technontech.html">ENROLL</a></div>
+        </div>
+      </div>
+      <div class="container box"> <!-- Combined classes -->
+        <img src="chemposter1 - Copy (2).jpeg" alt="Avatar" class="image">
+        <div class="middle">
+          <div class="text"><a href="technontech.html">ENROLL</a></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </body></html>

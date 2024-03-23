@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  .black-line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-container img {
+    margin-right: 10px; /* Add some spacing between image and text */
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    width: 200px; /* Adjust the width as needed */
+    margin-right: 10px; /* Add some spacing between label and input */
+  }
+
+  .form-group input {
+    flex: 1; /* Fill remaining space */
+  }
+  html {
+    background-color: #c5bfbf87; /* Light grey background color */
+  }
+  .side-image {
+    float: right; /* Align image to the right */
+  }
+  body {
+    font-weight: bold; /* Set font weight to bold for all text */
+  }
+  input[type="submit"] {
+    background-color: #070807; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none; /* Remove border */
+    border-radius: 200px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+    text-transform: uppercase;
+    position: center; /* Convert text to uppercase */
+  }
+
+  /* Hover effect for submit button */
+  input[type="submit"]:hover {
+    background-color: #141814; /* Darker green backg+round color */
+  }
+  </style>
+</head>
+<body>
+
+  <div class="header-container">
+    <img src="kongu.jpeg" alt="Description of the image" width="200" height="100">
+    <h1>KONGU ENGINEERING COLLEGE</h1>
+  </div>
+  
+
+  <div class="black-line"></div>
+<h2>Workshop: Introduction to Machine Learning</h2>
+<p>Workshops serve as interactive learning environments designed to provide participants with practical skills, knowledge, and hands-on experience in a specific subject area or discipline. These sessions typically involve a combination of presentations, demonstrations, discussions, and activities led by experts or facilitators in the field. Workshops offer a unique opportunity for individuals to deepen their understanding, refine their techniques, and acquire new insights through active participation and engagement. They cater to diverse audiences, including professionals seeking professional development, students exploring new interests, and enthusiasts eager to enhance their expertise. Additionally, workshops foster collaboration, networking, and the exchange of ideas among participants, creating a dynamic learning community where individuals can learn from one another and collectively tackle challenges. Whether focused on technical skills, creative arts, personal development, or professional growth, workshops provide a collaborative and immersive learning experience that empowers individuals to apply newfound knowledge and skills in their personal and professional endeavors.</p>
+<form id="registrationForm">
+  <label for="teamName">TEAM NAME:</label><br>
+  <input type="text" id="teamName" name="teamName" required><br>
+  
+  <label for="department">DEPARTMENT:</label><br>
+  <input type="text" id="department" name="department" required><br>
+  
+  <label for="teamLeaderName">TEAM LEADER NAME:</label><br>
+  <input type="text" id="teamLeaderName" name="teamLeaderName" required><br>
+  
+  <label for="teamLeaderEmail">TEAM LEADER ROLL NUMBER:</label><br>
+  <input type="email" id="teamLeaderEmail" name="teamLeaderEmail" required><br>
+  
+  <label for="teamLeaderEmail">TEAM LEADER EMAIL:</label><br>
+  <input type="email" id="teamLeaderEmail" name="teamLeaderEmail" required><br>
+
+  <label for="teamLeaderMobile">TEAM LEADER MOBILE NUMBER:</label><br>
+  <input type="tel" id="teamLeaderMobile" name="teamLeaderMobile" required><br>
+  <div class="side-image">
+
+    <p>PAYMENT DETAILS:</p>
+  <img src="patym.jpg" alt="Side Image" width="400" height="300">
+  <div class="form-group">
+    <label for="fileUpload">UPLOAD TRANSACTION SCREENSHOT:</label>
+    <input type="file" id="fileUpload" name="fileUpload" required="">
+  </div>
+</div>
+
+  <label for="member2Name">TEAM MEMBER 2:</label><br>
+  <input type="text" id="member2Name" name="member2Name" required=""><br>
+  
+  <label for="member3Name">TEAM MEMBER 2 ROLL NUMBER:</label><br>
+  <input type="text" id="member3Name" name="member3Name" required=""><br>
+  
+  <label for="member3Name">TEAM MEMBER 2 EMAIL:</label><br>
+  <input type="text" id="member3Name" name="member3Name" required=""><br>
+
+  <label for="member3Name">TEAM MEMBER 2 PHONE NUMBER:</label><br>
+  <input type="text" id="member3Name" name="member3Name" required=""><br> 
+   
+  <label for="member2Name">TEAM MEMBER 3:</label><br>
+  <input type="text" id="member2Name" name="member2Name" required=""><br>
+  
+  <label for="member3Name">TEAM MEMBER 3 ROLL NUMBER:</label><br>
+  <input type="text" id="member3Name" name="member3Name" required=""><br>
+  
+  <label for="member3Name">TEAM MEMBER 3 EMAIL:</label><br>
+  <input type="text" id="member3Name" name="member3Name"required=""><br>
+
+  <label for="member3Name">TEAM MEMBER 3 PHONE NUMBER:</label><br>
+  <input type="text" id="member3Name" name="member3Name" required=""><br> 
+  <div class="form-group">
+    <label for="fileUpload">UPLOAD ABSTRACT:</label>
+    <input type="file" id="fileUpload" name="fileUpload" required="">
+  </div>
+  <div class="form-group">
+    <label for="fileUpload">UPLOAD PPT:</label>
+    <input type="file" id="fileUpload" name="fileUpload" required="">
+  </div>
+  
+
+  <input type="submit" value="Submit">
+</form>
+
+<p id="whatsappLink"></p>
+
+</body>
+</html>

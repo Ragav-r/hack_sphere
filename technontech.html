@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Background Image</title>
+    <link rel="stylesheet" href="technontech.css" />
+    <style>
+    body {
+   /* Specify the path to your image */
+      background-size: cover; /* Cover the entire background */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-attachment: fixed; /* Fixed background */
+    }
+    
+  #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    #video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: 2000px;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+    </style>
+</head>
+<body >
+   <div id="video-background">
+      <video autoplay muted loop>
+          <source src="C:\xampp\htdocs\AI HACKATHON\enrollpage.mp4" type="video/mp4">
+          <!-- You can add other video formats here -->
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+<div class="container">
+    <div class="rectangle" style="background-color:#0d0f10">
+        <img src="C:\xampp\htdocs\AI HACKATHON\tech.png" class="image1" alt="Image" style="height: 50%;width: 100%;">
+        <a href="technicalevents.html" class="enroll-button"><div class="rectangle2"></div>
+           <div class="text4">Technical</div>
+          <div class="text">"Unlock innovation, ignite creativity, and delve into the future of technology at our dynamic technical events. Join us for an  electrifying journey of discovery!"</div>
+             <button class="button">Enroll now</button>
+             </a>
+    </div>   
+     <div class="rectangle3" style="background-color:#0c0d0e">
+        <img src="C:\xampp\htdocs\AI HACKATHON\nontech.png" class="image2" alt="Image" style="height: 50%;width: 100%;">
+        <a href="nontechnicalevent.html" class="enroll-button"><div class="C:\xampp\htdocs\AI HACKATHON\nontech.png"></div>
+           <div class="text5">NonTechnical</div>
+          <div class="text1">"Come join us for fun and inspiring events like  art showcases and cultural celebrations. You'll have a great time, make new friends, and create special memories."</div>
+           <button class="button1">Enroll now</button>
+             </a>
+    </div>   
+    <div class="rectangle5" style="background-color:#0d0f11">
+        <img src="C:\xampp\htdocs\AI HACKATHON\games.png" class="image3" alt="Image" style="height: 50%;width: 100%;">
+        <a href="games.html" class="enroll-button"> <div class="rectangle6"></div>
+           <div class="text5">Game</div>
+          <div class="text2">"Step into a world where pixels transform into epic adventures! Join us for heart-pounding gaming events where strategy meets adrenaline, and victory is just a click away."</div>
+             <button class="button2">Enroll now</button>
+    </div>      </a>
+</div>
+</body>
+</html>
+
